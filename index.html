@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing estilo Bio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 8px 10px 22px;
+    }
+
+    .perfil {
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .perfil h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .foto-perfil {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.08);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .producto {
+      margin-bottom: 14px;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .link-imagen {
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .imagen-principal {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      background: #111;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .link-imagen:hover .imagen-principal {
+      opacity: 0.95;
+      transform: scale(1.01);
+    }
+
+    .tarjeta-oferta {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 14px 12px 12px;
+    }
+
+    .tarjeta-oferta h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .tarjeta-oferta p {
+      font-size: 11px;
+      color: #cfcfcf;
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+
+    .boton-compra {
+      display: block;
+      width: 100%;
+      background: #f2f2f2;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      padding: 11px 10px;
+      border-radius: 7px;
+      font-size: 11px;
+      transition: 0.2s ease;
+    }
+
+    .boton-compra:hover {
+      opacity: 0.95;
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 380px) {
+      .container {
+        max-width: 300px;
+      }
+
+      .perfil h1 {
+        font-size: 22px;
+      }
+
+      .foto-perfil {
+        width: 100px;
+        height: 100px;
+      }
+
+      .tarjeta-oferta h2 {
+        font-size: 16px;
+      }
+
+      .tarjeta-oferta p {
+        font-size: 10px;
+      }
+
+      .boton-compra {
+        font-size: 10px;
+        padding: 10px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="perfil">
+      <h1>DR ANA TE RECOMIENDA</h1>
+      <img src="D:/Core Vital/Fotos y portadas/Doctora ANA.png" alt="Foto doctora" class="foto-perfil">
+    </div>
+
+    <div class="producto">
+      <a href="https://corevital-3.myshopify.com/products/move-free" class="link-imagen">
+        <img src="D:/Core Vital/Fotos y portadas/Move free/Imagen promocional Move Free.png" alt="Move Free Colombia" class="imagen-principal">
+      </a>
+      <div class="tarjeta-oferta">
+        <h2>MOVE FREE COLOMBIA</h2>
+        <p>DESCUENTO ESPECIAL. SOLO HOY + ENVÍO GRATIS</p>
+        <a href="https://corevital-3.myshopify.com/products/move-free" class="boton-compra">¡¡COMPRALO AHORA!!</a>
+      </div>
+    </div>
+
+    <div class="producto">
+      <a href="https://corevital-3.myshopify.com/products/move-free-copia" class="link-imagen">
+        <img src="D:/Core Vital/Fotos y portadas/EXCALVO/imagen promocional EXCALVO.png" alt="Shampoo Excalvo" class="imagen-principal">
+      </a>
+      <div class="tarjeta-oferta">
+        <h2>SHAMPOO EXCALVO</h2>
+        <p>TRATAMIENTO CAPILAR. COMPRA HOY Y APROVECHA LA OFERTA</p>
+        <a href="https://corevital-3.myshopify.com/products/move-free-copia" class="boton-compra">¡¡COMPRALO AHORA!!</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
